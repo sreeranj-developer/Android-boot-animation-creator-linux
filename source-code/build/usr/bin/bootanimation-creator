@@ -1,0 +1,63 @@
+#!/bin/bash
+
+echo "bootanimation-creator"
+echo "version-1.1 dev"
+echo "created by sreeranj"
+echo "########################"
+sleep 1s
+echo "Enter directory name :"
+read name
+cd
+echo "creating directory...."
+sleep 1s
+mkdir $name
+cd $name
+sleep 1s
+echo "creating files...."
+sleep 1s
+mkdir part0
+touch desc.txt
+touch generated.txt
+sleep 1s
+echo "enter your device screen resolution"
+echo "resolution-1 :"
+read a
+echo "resolution-2 :"
+read b
+echo "FPS :"
+read c
+echo "image-formate :"
+read d
+echo $a $b $c > desc.txt
+echo "p 0 0 part0 #111111 -1" >> desc.txt
+echo "generated using boot-animation creator" > generated.txt
+echo "press enter to continue.."
+read x
+echo "please add bootanimation images"
+sleep 1s
+echo "opening directory...."
+cd
+cd $name
+cd part0
+echo "please wait"
+nautilus .
+echo "if image add to the directory"
+echo "press enter to continue.."
+read y
+echo "building bootanimation...."
+sleep 1s
+cd
+cd $name
+zip -0 bootanimation.zip desc.txt part0/*.$d
+sleep 1s
+echo "build completed"
+sleep 2s
+cd
+cd $name
+echo "your build was save in /home/"$name
+echo "Thanks for using this program :)"
+echo "###############################################"
+sleep 2s
+nautilus .
+$SHELL
+
