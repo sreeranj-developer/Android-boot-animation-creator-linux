@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+
+echo "Looking for old versions of ABC..."
+
+if [ -f "$HOME/bin/bootanimation-creator" ]; then
+	sudo rm -f $HOME/bin/bootanimation-creator
+	echo "Removed old ABC from ~/bin..."
+fi
+
+if [ -f "/usr/local/bin/bootanimation-creator" ]; then
+	sudo rm -f /usr/local/bin/bootanimation-creator	
+	echo "Removed old ABC from /usr/local/bin..."
+fi
+
+if [ -f "/usr/bin/bootanimation-creator" ]; then
+	sudo rm -f /usr/bin/bootanimation-creator	
+	echo "Removed old ABC from /usr/bin..."
+fi
+
+if [ -f "/usr/share/applications/xbt.desktop" ]; then
+	sudo rm -f /usr/share/applications/ABC.desktop	
+	echo "Removed old ABC desktop menu file from /usr/share/applications..."
+fi
+
+if [ -f "/usr/share/icons/ABC-icon.xpm" ]; then
+	sudo rm -f /usr/share/icons/ABC-icon.xpm 	
+	echo "Removed old ABC menu icon file from /usr/share/icons..."
+fi
+
+exit
+
+
+
+
