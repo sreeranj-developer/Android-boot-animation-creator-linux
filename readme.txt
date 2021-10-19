@@ -18,11 +18,11 @@ android bootanimation creator
    ___ _ __ ___  __ _| |_ ___  _ __ 
   / __| '__/ _ \/ _` | __/ _ \| '__|
  | (__| | |  __/ (_| | || (_) | |   
-  \___|_|  \___|\__,_|\__\___/|_|   version 1.0.stable
+  \___|_|  \___|\__,_|\__\___/|_|   version 1.1.dev
                                     
 ############################################################  
 android bootanimation creator                                 
-version 1.0.stable
+version 1.1.dev
 created by sreeranj
 
 Easy to use android bootanimation creator written in shell-script
