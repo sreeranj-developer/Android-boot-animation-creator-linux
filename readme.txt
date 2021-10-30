@@ -37,7 +37,7 @@ known-issues
 ########
 All bug fixed
 is any other issues!
-you tell me
+you tell me..
 ############
 
 
