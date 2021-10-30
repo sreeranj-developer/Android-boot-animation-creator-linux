@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "bootanimation-creator"
-echo "version-1.1 dev"
+echo "version-1.1 stable"
 echo "created by sreeranj"
 echo "########################"
 sleep 1s
@@ -40,7 +40,7 @@ cd
 cd $name
 cd part0
 echo "please wait"
-nautilus .
+xdg-open /home/$USER/$name/part0
 echo "if image add to the directory"
 echo "press enter to continue.."
 read y
@@ -58,6 +58,6 @@ echo "your build was save in /home/"$name
 echo "Thanks for using this program :)"
 echo "###############################################"
 sleep 2s
-nautilus .
+xdg-open /home/$USER/$name/
 $SHELL
 
