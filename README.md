@@ -1,9 +1,6 @@
 # Android-boot-animation-creator-linux
 Easy to use bootanimation creator written in "Shell-script"
 
-⚠️ attention :   this project only works with ubuntu based distros
-
-
 
 📸 screenshot :
 
