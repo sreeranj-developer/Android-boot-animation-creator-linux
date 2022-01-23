@@ -1,7 +1,20 @@
 #!/bin/bash
 
+
+read -r -p "Are you sure to continue? [y/n] " response
+case "$response" in
+    [yY][eE][sS]|[yY]) 
+        
+        ;;
+    *)
+        echo "exiting...."
+        sleep 1s
+        exit
+        ;;
+esac
+
 echo "bootanimation-creator"
-echo "version-1.1 stable"
+echo "version-1.2 dev"
 echo "created by sreeranj"
 echo "########################"
 sleep 1s
@@ -48,10 +61,16 @@ echo "building bootanimation...."
 sleep 1s
 cd
 cd $name
+convert part0/*.$d -resize $ax$b 0.png
+rm -f part0/*.$d
+mv *.png /home/$USER/$name/part0/
 zip -0 bootanimation.zip desc.txt part0/*.$d
 sleep 1s
 echo "build completed"
 sleep 2s
+echo "preview.."
+convert -delay $c -loop 0 part0/*.$d preview.gif
+display preview.gif
 cd
 cd $name
 echo "your build was save in /home/"$name
