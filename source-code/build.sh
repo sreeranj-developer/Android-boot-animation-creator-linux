@@ -1,4 +1,4 @@
-#!/bin/sh
+
 echo "building-deb.."
 sleep 5s;
 echo "compressing-data"
@@ -12,9 +12,26 @@ cd ..
 sleep 1s;
 echo "reading-control"
 sleep 1s;
-dpkg-deb --build build android-bootanimation-creator-V1.2.dev-linux.deb
+echo "checking-version"
+while IFS= read -r line; do
+  if [[ "$line" == *"V"* ]]; then
+    printf '%s\n' "$line"
+    sleep 1s;
+    echo "creating-deb"
+    dpkg-deb --build build android-bootanimation-creator-$line-linux.deb
+  fi
+done < "version-control.txt"
 sleep 1s;
 echo "creating-md5sum"
 md5sum *.deb > md5sums.txt
 sleep 2s;
 echo "build-finished!"
+sleep 2s;
+echo "Do you wish to install this program?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) sudo dpkg -i *.deb; break;;
+        No ) exit;;
+    esac
+done
+
