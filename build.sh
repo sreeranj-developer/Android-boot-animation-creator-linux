@@ -1,7 +1,4 @@
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
+
 
 echo "building-deb.."
 sleep 5s;
@@ -22,6 +19,7 @@ while IFS= read -r line; do
     printf '%s\n' "$line"
     sleep 1s;
     echo "creating-deb"
+    echo "need superuser-grant"
     sudo dpkg-deb --build build android-bootanimation-creator-$line-linux.deb
   fi
 done < "version-control.txt"
