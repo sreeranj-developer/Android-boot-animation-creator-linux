@@ -15,7 +15,7 @@ Easy to use bootanimation creator written in "Shell-script"
  
  ```git clone <repository-name>```
  
- 📁 go to the clone folder
+ 📁 go to the cloned folder
  
  ```cd <folder-name>```
  
