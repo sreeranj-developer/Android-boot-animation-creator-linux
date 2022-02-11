@@ -22,7 +22,7 @@ android bootanimation creator
                                     
 ############################################################  
 android bootanimation creator                                 
-version 1.2.stable
+version 1.2.dev
 created by sreeranj
 
 Easy to use android bootanimation creator written in shell-script
