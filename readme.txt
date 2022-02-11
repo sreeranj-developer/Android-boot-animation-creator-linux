@@ -42,7 +42,7 @@ you tell me..
 
 
 
-please support this project for bug-fixing ,latest updation etc
+please support this project for bug-fixing ,latest-update etc
 source code can be get in github
 #####################################################################
 
