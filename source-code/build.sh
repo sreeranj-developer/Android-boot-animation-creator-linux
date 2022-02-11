@@ -8,6 +8,17 @@ cd build
 cd DEBIAN
 chmod +x preinst
 cd ..
+sleep 1s;
+echo "executing-programmes"
+cd usr/bin/
+chmod +x bootanimation-creator
+cd ..
+cd ..
+cd usr/share/applications/
+chmod +x ABC.desktop
+cd ..
+cd ..
+cd ..
 cd ..
 sleep 1s;
 echo "reading-control"
