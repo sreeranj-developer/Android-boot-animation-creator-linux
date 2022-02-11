@@ -18,8 +18,7 @@ while IFS= read -r line; do
     printf '%s\n' "$line"
     sleep 1s;
     echo "creating-deb"
-    echo "need superuser-grant"
-    sudo dpkg-deb --build build android-bootanimation-creator-$line-linux.deb
+    dpkg-deb --build build android-bootanimation-creator-$line-linux.deb
   fi
 done < "version-control.txt"
 sleep 1s;
