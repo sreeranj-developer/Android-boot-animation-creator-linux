@@ -11,21 +11,21 @@ Easy to use bootanimation creator written in "Shell-script"
  👨‍💻**Build and install**(for-developers)
  
  
- clone github repository using git clone command
+ 📋clone github repository using git clone command
  
  ```git clone <repository-name>```
  
- go to the clone folder
+ 📁go to the clone folder
  
  ```cd <folder-name>```
  
  
  
- run build.sh file to build the programme
+ 🏗️run build.sh file to build the programme
  
  ```./build.sh```
  
  
  
  
- after build complete you will get a prompt for installing project to your device
+ 👍after build complete you will get a prompt for installing project to your device
