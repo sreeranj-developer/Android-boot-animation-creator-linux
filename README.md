@@ -26,6 +26,6 @@ Easy to use bootanimation creator written in "Shell-script"
  ```./build.sh```
  
  
- 
+ you can also use deb-builder tool to create deb package https://github.com/sreeranj-developer/deb-builder
  
  👍 after build complete you will get a prompt for installing project to your device
